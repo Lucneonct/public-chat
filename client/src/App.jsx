@@ -62,7 +62,8 @@ function App() {
     return function () {
       socket.off('message');
     }
-  }, [serverMessages.length]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [serverMessages]);
 
   return (
     <div className="bg-gray-800 min-h-screen">
